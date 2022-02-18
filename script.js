@@ -20,38 +20,22 @@ const mergeTags = [
 ];
 
 tinymce.init({
-	selector: 'textarea',
+	selector: 'div',
 	menubar: false,
-	inline_boundaries: false,
+    inline: true,
 	resize: false,
 	toolbar: "styleselect fontselect fontsizeselect | bold italic underline strikethrough | link unlink mergefields | code",
 
 	plugins: 'link,code',
 
 	external_plugins: {
-	  visualMergeTags: '../plugin/visual-merge-tags.js'
+	  visualMergeTags: '/custom-plugin/visual-merge-tags.js'
 	},
 
 	merge_tags: {
 		FIRST_NAME: "First Name",
 		LAST_NAME: "Last Name",
 		EMAIL_ADDRESS: "Email Address"
-	},
-
-	merge_tag_style: {
-		'cursor': 'pointer',
-		'user-select': 'none',
-		'background-color': '#EFEFEF',
-		'color': 'black',
-		'border': '1px solid #CCCCCC',
-		'font-size': 'inherit',
-		'font-style': 'normal',
-		'font-weight': 'normal',
-		'text-decoration': 'none',
-		'padding': '4px 8px',
-		'border-radius': '6px',
-		'font-weight': 'normal',
-		'box-sizing': 'border-box'
 	},
 
 	setup: function(editor) {
