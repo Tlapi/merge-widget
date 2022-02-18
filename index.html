@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Testing Visual Merge Tags Plugin</title>
+		<script src="tinymce/tinymce.min.js"></script>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				height: 100%;
+				width: 100%;
+			}
+
+			main {
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			main > h1 {
+				margin: 0;
+				padding: 1em 0;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Testing Visual Merge Tags Plugin</h1>
+
+			<textarea name="content">
+				<p>Greetings *|FIRST_NAME|* *|LAST_NAME|*,</p>
+				<p>I have sent the document you requested to *|EMAIL_ADDRESS?your email address|*.</p>
+			</textarea>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
